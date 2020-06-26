@@ -1,0 +1,125 @@
+.v-align {
+    vertical-align: middle;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+@mixin default-transition {
+    transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+}
+
+.plr-30 {
+    padding: 0 30px;
+}
+
+.navbar_wraper {
+    background-color: $white;
+    height: 80px;
+
+    .navbar {
+        padding: 0;
+        height: 80px;
+        padding: 0 40px;
+    }
+
+    .search-block {
+        background: $pri_gray;
+        border-radius: 25px;
+
+        .input-group-text {
+            background-color: transparent;
+            border: none
+        }
+
+        .form-control {
+            background-color: $pri_gray;
+            border: none;
+            border-radius: 25px;
+            height: 45px;
+
+            &:focus {
+                box-shadow: none;
+            }
+        }
+    }
+
+    .user-nav-block {
+        padding: 0 0;
+
+        button {
+            background: transparent;
+            border: none;
+            display: flex;
+
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        .naming-section {
+            text-align: left;
+            line-height: 14px;
+            margin-top: 6px;
+            margin-left: 18px;
+
+            .name {
+                font-size: 1rem;
+                font-weight: 600;
+                color: $text-heading;
+            }
+
+            .title {
+                font-size: 10px;
+                color: #092B57;
+                opacity: 0.6;
+            }
+        }
+    }
+
+    .log-user-img {
+        img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    }
+}
+
+.navbar>.container {
+
+    @include responsive_mobile() {
+        padding-bottom: 0px;
+    }
+}
+
+.nav-link,
+.navbar-brand {
+    color: #000;
+}
+
+.nav-link {
+    &.active {
+        border-bottom: solid 3px $pri_blue;
+    }
+}
+
+.dropdown-menu {
+    background-color: $pri_blue;
+    background-clip: padding-box;
+    border: none;
+    border-radius: 0;
+
+    .dropdown-item {
+        color: $white;
+    }
+}
+
+.dropdown-toggle::after {
+    margin-top: 8px;
+    margin-left: 8px;
+}

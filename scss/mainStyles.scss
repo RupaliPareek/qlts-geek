@@ -1,0 +1,68 @@
+@import './_responsive_mixins';
+@import './_fonts';
+@import './_colors';
+@import './_typography';
+
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background: $pri_gray;
+    padding: 1.875rem 2.25rem;
+    font-family: 'Poppins_Regular';
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+
+
+// sections
+@import './_navbar';
+@import './_footer';
+@import './_sidebar';
+@import './_mainblock';
+@import './_mobileview';
+
+
+
+.mob_hidden {
+    display: block;
+
+    @include responsive_mobile() {
+        display: none;
+    }
+}
+
+.tab_hidden {
+    display: block;
+
+    @include responsive_tab() {
+        display: none;
+    }
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #e8e8f1;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #e8e8f1;
+}

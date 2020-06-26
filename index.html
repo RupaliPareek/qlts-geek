@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>QLTS Geeks</title>
+
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/mainStyles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+</head>
+
+<body>
+    <div class="navbar_wraper">
+        <!-- will load common navbar with js $().load() method -->
+
+        <nav class="navbar navbar-expand-lg">
+            <!--  navbar-dark bg-primary -->
+            <div class="w-100">
+                <div class="row w-100 v-align">
+                    <div class="col-sm-3">
+                        <a class="navbar-brand" href="/">
+                            <img src="./img/Logos/logo.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="search-block">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">
+                                        <img src="./img/Search.svg" alt="">
+                                    </span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Search for track, artist or album…"
+                                    aria-label="Username" aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="d-flex v-align">
+                            <div class="plr-30">
+                                <a href="">
+                                    <img src="./img/Support.svg" alt="">
+                                </a>
+                            </div>
+                            <div class="plr-30">
+                                <a href="">
+                                    <img src="./img/notification.svg" alt="">
+                                </a>
+                            </div>
+                            <div class="user-nav-block">
+
+                                <div class="dropdown">
+                                    <button class="dropdown-toggle" type="button" id="dropdownMenuButton"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="log-user-img">
+                                            <img src="./img/img.png" alt="">
+                                        </span>
+                                        <span class="naming-section">
+                                            <span class="name">Sanket Pal</span><br>
+                                            <span class="title">Student</span>
+                                        </span>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button> -->
+
+
+            </div>
+        </nav>
+    </div>
+    <div class="d-flex">
+        <div class="sidebar">
+            <div class="sidebar-wrapper">
+                <!-- Sidebar Navigation Start -->
+                <div class="divider">
+                    <ul class="nav nav-spacing">
+                        <li class="">
+                            <a href="#">
+                                <span class="icon-holder">
+                                    <img src="./img/dashboard.svg" alt="">
+                                </span>
+                                <span class="title">
+                                    Dashboard
+                                </span>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="#">
+                                <span class="icon-holder">
+                                    <img src="./img/Report.svg" alt="">
+                                </span>
+                                <span class="title">
+                                    Study for MCT
+                                </span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#">
+                                <span class="icon-holder">
+                                    <img src="./img/Leaderboard.svg" alt="">
+                                </span>
+                                <span class="title">
+                                    Study for OSCE
+                                </span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#">
+                                <span class="icon-holder">
+                                    <img src="./img/Sales.svg" alt="">
+                                </span>
+                                <span class="title">
+                                    Cheat Sheet
+                                </span>
+                            </a>
+                        </li>
+
+                        <li class="">
+                            <a href="#">
+                                <span class="icon-holder">
+                                    <img src="./img/Sales.svg" alt="">
+                                </span>
+                                <span class="title">
+                                    QLTS Social
+                                </span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#">
+                                <span class="icon-holder">
+                                    <img src="./img/Administration.svg" alt="">
+                                </span>
+                                <span class="title">
+                                    Tutor Support
+                                </span>
+                            </a>
+                        </li>
+                        <!-- <li class="">
+                            <a href="#">
+                                <span class="icon-holder">
+                                    <img src="./img/Schedule.svg" alt="">
+                                </span>
+                                <span class="title">
+                                    Eligibility Criteria for QLTS
+                                </span>
+                            </a>
+                        </li> -->
+
+
+                    </ul>
+                </div>
+
+                <div class="divider">
+                    <h4 class="list-head">Help</h4>
+                    <ul class="nav">
+                        <li>
+                            <a href="#">
+                                <span class="icon-holder">
+                                    <img src="./img/setting.svg" alt="">
+                                </span>
+                                <span class="title">
+                                    Setting
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon-holder">
+                                    <img src="./img/Support.svg" alt="">
+                                </span>
+                                <span class="title">
+                                    Support
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon-holder">
+                                    <img src="./img/library.svg" alt="">
+                                </span>
+                                <span class="title">
+                                    Library
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon-holder">
+                                    <img src="./img/message.svg" alt="">
+                                </span>
+                                <span class="title">
+                                    Message
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Sidebar Navigation End -->
+            </div>
+        </div>
+        <div class="main-container">
+            <div class="cards-row">
+                <div>
+                    <h4 class="section-head">
+                        Mock Test
+                    </h4>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3 ">
+                        <div class="card">
+                            <div class="progress-bar-header">
+                                <div class="progress-bard-block">
+                                    <label for="">0% Completed</label>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 25%"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <div class="favirate-icon">
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                            viewBox="0 0 25 25">
+                                            <defs>
+                                                <style>
+                                                    .a {
+                                                        opacity: 0.23;
+                                                    }
+
+                                                    .b,
+                                                    .c {
+                                                        fill: #ff808b;
+                                                    }
+
+                                                    .c {
+                                                        stroke: #ff808b;
+                                                        stroke-width: 0.5px;
+                                                    }
+                                                </style>
+                                            </defs>
+                                            <g transform="translate(0.131 4.038)">
+                                                <g transform="translate(0 -4)">
+                                                    <g class="a">
+                                                        <circle class="b" cx="12.5" cy="12.5" r="12.5"
+                                                            transform="translate(-0.131 -0.038)" />
+                                                    </g>
+                                                    <path class="c"
+                                                        d="M4.555,8.211a.359.359,0,0,1-.28-.122L.759,4.512A2.722,2.722,0,0,1,0,2.642,2.57,2.57,0,0,1,.8.772a2.55,2.55,0,0,1,3.636,0L4.6.935l.16-.163A2.631,2.631,0,0,1,6.593,0a2.512,2.512,0,0,1,1.8.772,2.241,2.241,0,0,1,.719,1.87,2.722,2.722,0,0,1-.759,1.87L4.835,8.089A.36.36,0,0,1,4.555,8.211ZM2.6.813a1.654,1.654,0,0,0-1.239.528,1.97,1.97,0,0,0-.52,1.3,1.791,1.791,0,0,0,.52,1.3L4.6,7.236,7.832,3.943a1.837,1.837,0,0,0,.559-1.3,1.971,1.971,0,0,0-.519-1.3A1.9,1.9,0,0,0,6.593.813a1.924,1.924,0,0,0-1.319.528l-.4.447a.381.381,0,0,1-.56,0l-.44-.447A1.729,1.729,0,0,0,2.6.813Z"
+                                                        transform="translate(8.211 9.124)" />
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div>
+                                <figure>
+                                    <img src="./img/civil-liti.svg" alt="">
+                                </figure>
+                                <h4>
+                                    Civil Litigation
+                                </h4>
+                            </div>
+                            <div>
+                                <button class="take-rest-btn">
+                                    Take Rest
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card">
+                            <div class="progress-bar-header">
+                                <div class="progress-bard-block">
+                                    <label for="">0% Completed</label>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 25%"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <div class="favirate-icon">
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                            viewBox="0 0 25 25">
+                                            <defs>
+                                                <style>
+                                                    .a {
+                                                        opacity: 0.23;
+                                                    }
+
+                                                    .b,
+                                                    .c {
+                                                        fill: #ff808b;
+                                                    }
+
+                                                    .c {
+                                                        stroke: #ff808b;
+                                                        stroke-width: 0.5px;
+                                                    }
+                                                </style>
+                                            </defs>
+                                            <g transform="translate(0.131 4.038)">
+                                                <g transform="translate(0 -4)">
+                                                    <g class="a">
+                                                        <circle class="b" cx="12.5" cy="12.5" r="12.5"
+                                                            transform="translate(-0.131 -0.038)" />
+                                                    </g>
+                                                    <path class="c"
+                                                        d="M4.555,8.211a.359.359,0,0,1-.28-.122L.759,4.512A2.722,2.722,0,0,1,0,2.642,2.57,2.57,0,0,1,.8.772a2.55,2.55,0,0,1,3.636,0L4.6.935l.16-.163A2.631,2.631,0,0,1,6.593,0a2.512,2.512,0,0,1,1.8.772,2.241,2.241,0,0,1,.719,1.87,2.722,2.722,0,0,1-.759,1.87L4.835,8.089A.36.36,0,0,1,4.555,8.211ZM2.6.813a1.654,1.654,0,0,0-1.239.528,1.97,1.97,0,0,0-.52,1.3,1.791,1.791,0,0,0,.52,1.3L4.6,7.236,7.832,3.943a1.837,1.837,0,0,0,.559-1.3,1.971,1.971,0,0,0-.519-1.3A1.9,1.9,0,0,0,6.593.813a1.924,1.924,0,0,0-1.319.528l-.4.447a.381.381,0,0,1-.56,0l-.44-.447A1.729,1.729,0,0,0,2.6.813Z"
+                                                        transform="translate(8.211 9.124)" />
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div>
+                                <figure>
+                                    <img src="./img/civil-liti.svg" alt="">
+                                </figure>
+                                <h4>
+                                    Civil Litigation
+                                </h4>
+                            </div>
+                            <div>
+                                <button class="take-rest-btn">
+                                    Take Rest
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card">
+                            <div class="progress-bar-header">
+                                <div class="progress-bard-block">
+                                    <label for="">0% Completed</label>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 25%"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <div class="favirate-icon">
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                            viewBox="0 0 25 25">
+                                            <defs>
+                                                <style>
+                                                    .a {
+                                                        opacity: 0.23;
+                                                    }
+
+                                                    .b,
+                                                    .c {
+                                                        fill: #ff808b;
+                                                    }
+
+                                                    .c {
+                                                        stroke: #ff808b;
+                                                        stroke-width: 0.5px;
+                                                    }
+                                                </style>
+                                            </defs>
+                                            <g transform="translate(0.131 4.038)">
+                                                <g transform="translate(0 -4)">
+                                                    <g class="a">
+                                                        <circle class="b" cx="12.5" cy="12.5" r="12.5"
+                                                            transform="translate(-0.131 -0.038)" />
+                                                    </g>
+                                                    <path class="c"
+                                                        d="M4.555,8.211a.359.359,0,0,1-.28-.122L.759,4.512A2.722,2.722,0,0,1,0,2.642,2.57,2.57,0,0,1,.8.772a2.55,2.55,0,0,1,3.636,0L4.6.935l.16-.163A2.631,2.631,0,0,1,6.593,0a2.512,2.512,0,0,1,1.8.772,2.241,2.241,0,0,1,.719,1.87,2.722,2.722,0,0,1-.759,1.87L4.835,8.089A.36.36,0,0,1,4.555,8.211ZM2.6.813a1.654,1.654,0,0,0-1.239.528,1.97,1.97,0,0,0-.52,1.3,1.791,1.791,0,0,0,.52,1.3L4.6,7.236,7.832,3.943a1.837,1.837,0,0,0,.559-1.3,1.971,1.971,0,0,0-.519-1.3A1.9,1.9,0,0,0,6.593.813a1.924,1.924,0,0,0-1.319.528l-.4.447a.381.381,0,0,1-.56,0l-.44-.447A1.729,1.729,0,0,0,2.6.813Z"
+                                                        transform="translate(8.211 9.124)" />
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div>
+                                <figure>
+                                    <img src="./img/civil-liti.svg" alt="">
+                                </figure>
+                                <h4>
+                                    Civil Litigation
+                                </h4>
+                            </div>
+                            <div>
+                                <button class="take-rest-btn">
+                                    Take Rest
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card">
+                            <div class="progress-bar-header">
+                                <div class="progress-bard-block">
+                                    <label for="">0% Completed</label>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 25%"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <div class="favirate-icon">
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                            viewBox="0 0 25 25">
+                                            <defs>
+                                                <style>
+                                                    .a {
+                                                        opacity: 0.23;
+                                                    }
+
+                                                    .b,
+                                                    .c {
+                                                        fill: #ff808b;
+                                                    }
+
+                                                    .c {
+                                                        stroke: #ff808b;
+                                                        stroke-width: 0.5px;
+                                                    }
+                                                </style>
+                                            </defs>
+                                            <g transform="translate(0.131 4.038)">
+                                                <g transform="translate(0 -4)">
+                                                    <g class="a">
+                                                        <circle class="b" cx="12.5" cy="12.5" r="12.5"
+                                                            transform="translate(-0.131 -0.038)" />
+                                                    </g>
+                                                    <path class="c"
+                                                        d="M4.555,8.211a.359.359,0,0,1-.28-.122L.759,4.512A2.722,2.722,0,0,1,0,2.642,2.57,2.57,0,0,1,.8.772a2.55,2.55,0,0,1,3.636,0L4.6.935l.16-.163A2.631,2.631,0,0,1,6.593,0a2.512,2.512,0,0,1,1.8.772,2.241,2.241,0,0,1,.719,1.87,2.722,2.722,0,0,1-.759,1.87L4.835,8.089A.36.36,0,0,1,4.555,8.211ZM2.6.813a1.654,1.654,0,0,0-1.239.528,1.97,1.97,0,0,0-.52,1.3,1.791,1.791,0,0,0,.52,1.3L4.6,7.236,7.832,3.943a1.837,1.837,0,0,0,.559-1.3,1.971,1.971,0,0,0-.519-1.3A1.9,1.9,0,0,0,6.593.813a1.924,1.924,0,0,0-1.319.528l-.4.447a.381.381,0,0,1-.56,0l-.44-.447A1.729,1.729,0,0,0,2.6.813Z"
+                                                        transform="translate(8.211 9.124)" />
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div>
+                                <figure>
+                                    <img src="./img/civil-liti.svg" alt="">
+                                </figure>
+                                <h4>
+                                    Civil Litigation
+                                </h4>
+                            </div>
+                            <div>
+                                <button class="take-rest-btn">
+                                    Take Rest
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-wrapper-end">
+                    <div class="slider-nav">
+                        <span>View More</span>
+                        <a href="#" class="prev-icon">
+                            <img src="./img/icon-chevron-left.svg" alt="">
+                        </a>
+                        <a href="#" class="next-icon">
+                            <img src="./img/icon-chevron-left.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="cards-row">
+                <div>
+                    <h4 class="section-head">
+                        Practice Questions
+                    </h4>
+                </div>
+                <div class="row ">
+                    <div class="col-sm-3 ">
+                        <div class="card">
+                            <div class="progress-bar-header">
+                                <div class="progress-bard-block">
+                                    <label for="">0% Completed</label>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 25%"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <div class="favirate-icon">
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                            viewBox="0 0 25 25">
+                                            <defs>
+                                                <style>
+                                                    .a {
+                                                        opacity: 0.23;
+                                                    }
+
+                                                    .b,
+                                                    .c {
+                                                        fill: #ff808b;
+                                                    }
+
+                                                    .c {
+                                                        stroke: #ff808b;
+                                                        stroke-width: 0.5px;
+                                                    }
+                                                </style>
+                                            </defs>
+                                            <g transform="translate(0.131 4.038)">
+                                                <g transform="translate(0 -4)">
+                                                    <g class="a">
+                                                        <circle class="b" cx="12.5" cy="12.5" r="12.5"
+                                                            transform="translate(-0.131 -0.038)" />
+                                                    </g>
+                                                    <path class="c"
+                                                        d="M4.555,8.211a.359.359,0,0,1-.28-.122L.759,4.512A2.722,2.722,0,0,1,0,2.642,2.57,2.57,0,0,1,.8.772a2.55,2.55,0,0,1,3.636,0L4.6.935l.16-.163A2.631,2.631,0,0,1,6.593,0a2.512,2.512,0,0,1,1.8.772,2.241,2.241,0,0,1,.719,1.87,2.722,2.722,0,0,1-.759,1.87L4.835,8.089A.36.36,0,0,1,4.555,8.211ZM2.6.813a1.654,1.654,0,0,0-1.239.528,1.97,1.97,0,0,0-.52,1.3,1.791,1.791,0,0,0,.52,1.3L4.6,7.236,7.832,3.943a1.837,1.837,0,0,0,.559-1.3,1.971,1.971,0,0,0-.519-1.3A1.9,1.9,0,0,0,6.593.813a1.924,1.924,0,0,0-1.319.528l-.4.447a.381.381,0,0,1-.56,0l-.44-.447A1.729,1.729,0,0,0,2.6.813Z"
+                                                        transform="translate(8.211 9.124)" />
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div>
+                                <figure>
+                                    <img src="./img/civil-liti.svg" alt="">
+                                </figure>
+                                <h4>
+                                    Civil Litigation
+                                </h4>
+                            </div>
+                            <div>
+                                <button class="take-rest-btn">
+                                    Take Rest
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card">
+                            <div class="progress-bar-header">
+                                <div class="progress-bard-block">
+                                    <label for="">0% Completed</label>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 25%"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <div class="favirate-icon">
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                            viewBox="0 0 25 25">
+                                            <defs>
+                                                <style>
+                                                    .a {
+                                                        opacity: 0.23;
+                                                    }
+
+                                                    .b,
+                                                    .c {
+                                                        fill: #ff808b;
+                                                    }
+
+                                                    .c {
+                                                        stroke: #ff808b;
+                                                        stroke-width: 0.5px;
+                                                    }
+                                                </style>
+                                            </defs>
+                                            <g transform="translate(0.131 4.038)">
+                                                <g transform="translate(0 -4)">
+                                                    <g class="a">
+                                                        <circle class="b" cx="12.5" cy="12.5" r="12.5"
+                                                            transform="translate(-0.131 -0.038)" />
+                                                    </g>
+                                                    <path class="c"
+                                                        d="M4.555,8.211a.359.359,0,0,1-.28-.122L.759,4.512A2.722,2.722,0,0,1,0,2.642,2.57,2.57,0,0,1,.8.772a2.55,2.55,0,0,1,3.636,0L4.6.935l.16-.163A2.631,2.631,0,0,1,6.593,0a2.512,2.512,0,0,1,1.8.772,2.241,2.241,0,0,1,.719,1.87,2.722,2.722,0,0,1-.759,1.87L4.835,8.089A.36.36,0,0,1,4.555,8.211ZM2.6.813a1.654,1.654,0,0,0-1.239.528,1.97,1.97,0,0,0-.52,1.3,1.791,1.791,0,0,0,.52,1.3L4.6,7.236,7.832,3.943a1.837,1.837,0,0,0,.559-1.3,1.971,1.971,0,0,0-.519-1.3A1.9,1.9,0,0,0,6.593.813a1.924,1.924,0,0,0-1.319.528l-.4.447a.381.381,0,0,1-.56,0l-.44-.447A1.729,1.729,0,0,0,2.6.813Z"
+                                                        transform="translate(8.211 9.124)" />
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div>
+                                <figure>
+                                    <img src="./img/civil-liti.svg" alt="">
+                                </figure>
+                                <h4>
+                                    Criminal Litigation
+                                </h4>
+                            </div>
+                            <div>
+                                <button class="take-rest-btn">
+                                    Take Rest
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card">
+                            <div class="progress-bar-header">
+                                <div class="progress-bard-block">
+                                    <label for="">0% Completed</label>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 25%"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <div class="favirate-icon">
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                            viewBox="0 0 25 25">
+                                            <defs>
+                                                <style>
+                                                    .a {
+                                                        opacity: 0.23;
+                                                    }
+
+                                                    .b,
+                                                    .c {
+                                                        fill: #ff808b;
+                                                    }
+
+                                                    .c {
+                                                        stroke: #ff808b;
+                                                        stroke-width: 0.5px;
+                                                    }
+                                                </style>
+                                            </defs>
+                                            <g transform="translate(0.131 4.038)">
+                                                <g transform="translate(0 -4)">
+                                                    <g class="a">
+                                                        <circle class="b" cx="12.5" cy="12.5" r="12.5"
+                                                            transform="translate(-0.131 -0.038)" />
+                                                    </g>
+                                                    <path class="c"
+                                                        d="M4.555,8.211a.359.359,0,0,1-.28-.122L.759,4.512A2.722,2.722,0,0,1,0,2.642,2.57,2.57,0,0,1,.8.772a2.55,2.55,0,0,1,3.636,0L4.6.935l.16-.163A2.631,2.631,0,0,1,6.593,0a2.512,2.512,0,0,1,1.8.772,2.241,2.241,0,0,1,.719,1.87,2.722,2.722,0,0,1-.759,1.87L4.835,8.089A.36.36,0,0,1,4.555,8.211ZM2.6.813a1.654,1.654,0,0,0-1.239.528,1.97,1.97,0,0,0-.52,1.3,1.791,1.791,0,0,0,.52,1.3L4.6,7.236,7.832,3.943a1.837,1.837,0,0,0,.559-1.3,1.971,1.971,0,0,0-.519-1.3A1.9,1.9,0,0,0,6.593.813a1.924,1.924,0,0,0-1.319.528l-.4.447a.381.381,0,0,1-.56,0l-.44-.447A1.729,1.729,0,0,0,2.6.813Z"
+                                                        transform="translate(8.211 9.124)" />
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div>
+                                <figure>
+                                    <img src="./img/civil-liti.svg" alt="">
+                                </figure>
+                                <h4>
+                                    Business Law
+                                </h4>
+                            </div>
+                            <div>
+                                <button class="take-rest-btn">
+                                    Take Rest
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card">
+                            <div class="progress-bar-header">
+                                <div class="progress-bard-block">
+                                    <label for="">0% Completed</label>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 25%"
+                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <div class="favirate-icon">
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                            viewBox="0 0 25 25">
+                                            <defs>
+                                                <style>
+                                                    .a {
+                                                        opacity: 0.23;
+                                                    }
+
+                                                    .b,
+                                                    .c {
+                                                        fill: #ff808b;
+                                                    }
+
+                                                    .c {
+                                                        stroke: #ff808b;
+                                                        stroke-width: 0.5px;
+                                                    }
+                                                </style>
+                                            </defs>
+                                            <g transform="translate(0.131 4.038)">
+                                                <g transform="translate(0 -4)">
+                                                    <g class="a">
+                                                        <circle class="b" cx="12.5" cy="12.5" r="12.5"
+                                                            transform="translate(-0.131 -0.038)" />
+                                                    </g>
+                                                    <path class="c"
+                                                        d="M4.555,8.211a.359.359,0,0,1-.28-.122L.759,4.512A2.722,2.722,0,0,1,0,2.642,2.57,2.57,0,0,1,.8.772a2.55,2.55,0,0,1,3.636,0L4.6.935l.16-.163A2.631,2.631,0,0,1,6.593,0a2.512,2.512,0,0,1,1.8.772,2.241,2.241,0,0,1,.719,1.87,2.722,2.722,0,0,1-.759,1.87L4.835,8.089A.36.36,0,0,1,4.555,8.211ZM2.6.813a1.654,1.654,0,0,0-1.239.528,1.97,1.97,0,0,0-.52,1.3,1.791,1.791,0,0,0,.52,1.3L4.6,7.236,7.832,3.943a1.837,1.837,0,0,0,.559-1.3,1.971,1.971,0,0,0-.519-1.3A1.9,1.9,0,0,0,6.593.813a1.924,1.924,0,0,0-1.319.528l-.4.447a.381.381,0,0,1-.56,0l-.44-.447A1.729,1.729,0,0,0,2.6.813Z"
+                                                        transform="translate(8.211 9.124)" />
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div>
+                                <figure>
+                                    <img src="./img/civil-liti.svg" alt="">
+                                </figure>
+                                <h4>
+                                    Property Law
+                                </h4>
+                            </div>
+                            <div>
+                                <button class="take-rest-btn">
+                                    Take Rest
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-wrapper-end">
+                    <div class="slider-nav">
+                        <span>View More</span>
+                        <a href="#" class="prev-icon">
+                            <img src="./img/icon-chevron-left.svg" alt="">
+                        </a>
+                        <a href="#" class="next-icon">
+                            <img src="./img/icon-chevron-left.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="footer_wraper">
+        <!-- will load common footer with js $().load() method -->
+    </div>
+    <script src="./js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/esm/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/mainFunctions.js"></script>
+</body>
+
+</html>

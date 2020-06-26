@@ -1,0 +1,103 @@
+@mixin default-transition {
+    transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+}
+
+
+.sidebar {
+    width: 260px;
+    background-color: #ffffff;
+    margin-top: 1.875rem;
+    height: 100vh;
+    font-family: 'Poppins_Regular';
+    height: calc(100vh - 180px);
+    overflow-y: scroll;
+
+    .divider {
+        position: relative;
+    }
+
+    .divider::before {
+        content: '';
+        width: 80%;
+        height: 3px;
+        background: #00165B;
+        position: absolute;
+        opacity: 2%;
+    }
+
+    .seprator {
+        background-color: #00165B;
+        opacity: 2%
+    }
+
+    .list-head {
+        color: $text-heading;
+        font-size: 14px;
+        font-weight: 700;
+        padding: 25px 25px 25px;
+    }
+
+    .nav-spacing {
+        padding: 20px 0 20px;
+        margin-top: 25px;
+    }
+
+    ul {
+        text-align: center;
+
+
+        li {
+            height: 50px;
+            display: flex;
+            width: 100%;
+            vertical-align: middle;
+            align-items: center;
+            padding: 0 25px;
+            font-size: 14px;
+            @include default-transition;
+            border-right: 5px solid $white;
+
+            &.active {
+                box-shadow: 14px 20px 69px #2807FF21;
+                border-right: 5px solid $pri_blue;
+
+                .title {
+                    color: $text-heading;
+
+                }
+
+            }
+
+            &:hover {
+                box-shadow: 14px 20px 69px #2807FF21;
+                border-right: 5px solid $pri_blue;
+
+                .title {
+                    color: $text-heading;
+
+                }
+
+            }
+
+
+            a {
+                @include default-transition;
+
+                &:hover {
+                    text-decoration: none;
+                }
+
+                .icon-holder {}
+
+                .title {
+                    color: $sidenav-text;
+                    margin-left: 20px;
+                    font-family: 'Poppins_Medium';
+                }
+            }
+        }
+    }
+}
