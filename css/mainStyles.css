@@ -576,6 +576,25 @@ body {
   margin-bottom: 130px;
 }
 
+.tap-ans-block {
+  background-color: #fbfbfb;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  margin: 0rem;
+  box-shadow: 0px -12px 37px #E6EBF380;
+  border-radius: 20px;
+  z-index: 99999;
+  left: 0;
+  padding: 2rem 2rem;
+  display: none;
+}
+.tap-ans-block p {
+  text-align: center;
+  padding-top: 35px;
+}
+
 .mob_hidden {
   display: block;
 }

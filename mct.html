@@ -15,6 +15,7 @@
             height: 760px;
             margin: 0 auto;
             padding: 0;
+            position: relative;
         }
     </style>
 
@@ -358,7 +359,7 @@
                 <div class="mt-45">
                     <img src="./img/arrow.svg" alt="">
                     <br>
-                    <a href="#" class="view-ans">Tap to view answer</a>
+                    <a href="#" class="view-ans" onclick="myFunction()">Tap to view answer</a>
                 </div>
 
             </div>
@@ -459,12 +460,29 @@
             </ul>
         </div>
     </div>
-
+    <div class="tap-ans-block" id="myDIV">
+        <div class="text-right">
+            <a href="#" onclick="myFunction()">
+                <img src="./img/close.svg" width="20px" alt="">
+            </a>
+        </div>
+        <p>View Answer</p>
+    </div>
 </body>
 <script src="./js/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/esm/popper.min.js"></script>
 <script src="./js/bootstrap.min.js"></script>
 <script src="./js/owl.carousel.min.js"></script>
 <script src="./js/mainFunctions.js"></script>
+<script>
+    function myFunction() {
+        var x = document.getElementById("myDIV");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+</script>
 
 </html>
