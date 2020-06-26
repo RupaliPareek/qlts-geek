@@ -460,6 +460,7 @@ body {
   border-top-right-radius: 20px;
   width: 400px;
   margin: 0 auto;
+  box-shadow: 0px -12px 37px #E6EBF380;
 }
 .bottom-fixed-nav ul {
   list-style-type: none;
@@ -508,6 +509,7 @@ body {
   text-align: center;
   height: 82px;
   padding-top: 27px;
+  box-shadow: 0px -12px 37px #E6EBF380;
 }
 .mobile-card .flex-wrapper {
   display: flex;
@@ -523,6 +525,7 @@ body {
 
 .responsive-card {
   padding: 14px 15px;
+  box-shadow: 0px -12px 37px #E6EBF380;
 }
 .responsive-card .progress-bar-header {
   margin-bottom: 16px;
@@ -550,6 +553,7 @@ body {
   padding: 5rem 3rem;
   text-align: center;
   margin: 0 1rem;
+  box-shadow: 0px -12px 37px #E6EBF380;
 }
 .interative-card h4 {
   font-weight: 700;
@@ -560,6 +564,16 @@ body {
 }
 .interative-card .mt-45 img {
   transform: rotate(90deg);
+}
+.interative-card .view-ans {
+  font-size: 11px;
+  color: #98A1BD;
+  padding-top: 18px;
+  display: inline-block;
+}
+
+.mb-130 {
+  margin-bottom: 130px;
 }
 
 .mob_hidden {
